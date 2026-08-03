@@ -1,0 +1,9 @@
+20/07/2026 -> ls,pwd,cd,cat
+27/07/2026 -> 
+git config --global user.name 
+git config --global user.email
+git clone
+git add
+git commit -m ""
+git push
+git status

@@ -1,0 +1,4 @@
+20/07/2026 -> scenario 1 :- installing the git and eclipse
+
+
+27/07/2026 -> create the directory in Ddrive if exists name as crc-devops in which create two files name as Assignment.txt and commandlist.txt . now access these files to modify or add the relevent content.
