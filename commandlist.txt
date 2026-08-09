@@ -7,3 +7,104 @@ git add
 git commit -m ""
 git push
 git status
+03/08/2026 ->
+# git / github workflow
+1. cd crc-devops
+2  ls -a(show hidden files also)
+3. git init
+4. git clone / git remote add origin "repo url "
+5. git status
+
+6. git add file_name / git add .
+7. git commit -m "message"
+8. git push -u origin branch_name
+
+
+# vi file_name
+used to modify a file with the new interface
+press i -> access to modification
+press esc -> back from modification
+
+constraints:
+:w -> save the content
+:q -> exit from vi interface
+:wq -> save and exit form vi interface
+
+
+# nano file_name
+used to modify or create a file by providin an interface like vi
+the only differnece is the save and the exit process 
+ctrl + X
+ctrl + Y 
+enter
+
+# rm file_name(empty) -> delete the empty file
+# rm -rf filename -> delete the file forcefully having the content
+
+
+#FILE AND DIRECTORY MANAGEMENT SYSTEM (CRUD OPERATIONS)
+
+#create
+touch file_name -> create an empty file
+mkdir dir_name -> create the new empty directory in current working directory
+mkdir -p parentdir_name newdir_name
+
+#read 
+ls -> show file and the directory in the current directory
+ls -a -> show the all files including the hidden files
+ls -l -> shows the files in long lasting format
+cat -> read file
+less file_name -> read page by page
+head file_name -> display first 10 line
+tail file_name -> display last 10 line
+
+# update 
+echo "write text here" > file_name
+(this is overwriting using > )
+echo "write text here" >> file_name
+(this is appending using >> )
+vi file_name
+nano file_name
+cp source_txt destination_txt -> create the duplicate of the file or directory
+(this is for file)
+
+cp -r source_txt destination_txt -> for directory
+mv old_txt new_txt -> mainly used to rename as the old file may not longer exist here
+
+# delete
+rm -> remove empty file
+rm -rf -> remove file 
+rmdir -> remove empty directory
+rmdir -rf dir_name -> remove directory
+
+
+
+# some other commands
+du -> display size of each content of directory 
+du -h -> display size of the content of directory in bytes
+head -> points the latest commit pointer
+git log -> gives the all details of the commits
+git reflog -> gies the only commitid and the commitmessage
+git diff old_commit_id new_commit_id -> returns the changes between those commits
+git stash -> used to temporarily save uncommited changes without commiting them (modified ir staged changes)
+git pull -> used to download the latest changes from as remote directory(fetch + merge) and merge into our local repo
+git revert commit_id -> used to undo the changes made by the previous commit for that it create a new commit
+
+
+05/08/2026 ->
+# branching
+feature branch -> replica of our main branch 
+git branch -> shows the branches and the current working branch
+git checkout branch_name -> used to switch from one the the another branch
+git merge feature_branch_name -> used to merge feature_branch with the current_branch
+git checkout -v branch_name -> create feature_branch and switch to that feature branch from main branch
+
+# workflow of the branching
+1. git branch
+2. checkout to source_branch
+3. mode changes
+4. perform the whole staging-> commiting -> pushing to this new  feature_branch
+5. checkout to destination_branch
+6. git pull
+7. git merge source_branch
+8. git push -u origin "destination_branch"

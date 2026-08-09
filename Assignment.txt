@@ -2,3 +2,12 @@
 
 
 27/07/2026 -> create the directory in Ddrive if exists name as crc-devops in which create two files name as Assignment.txt and commandlist.txt . now access these files to modify or add the relevent content.
+03/08/2026 -> 1. Read about branching in vcs
+2. merging
+3. pull request(PR)
+4. rebasing
+5. git branch -v branch_name
+6. git checkout
+7. git branch -d branch_name
+8. git merge branch_name
+05/08/2025 -> quiz based on linux and the git commands basics
