@@ -108,3 +108,7 @@ git checkout -v branch_name -> create feature_branch and switch to that feature 
 6. git pull
 7. git merge source_branch
 8. git push -u origin "destination_branch"
+12/08/2026 ->
+git push --delete origin branch_name -> it deletes the branch from the remote repository
+git branch -d branch_name -> deletes the local branch
+git branch -D branch_name -> deletes forceffully the local branch

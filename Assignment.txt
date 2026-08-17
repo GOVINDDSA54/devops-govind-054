@@ -10,4 +10,5 @@
 6. git checkout
 7. git branch -d branch_name
 8. git merge branch_name
-05/08/2025 -> quiz based on linux and the git commands basics
+05/08/2026 -> quiz based on linux and the git commands basics
+12/08/2026 -> test based on basic commands od the linux , process of github , process of branching
